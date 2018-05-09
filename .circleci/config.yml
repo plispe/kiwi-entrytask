@@ -27,7 +27,7 @@ jobs:
             chmod +rx /usr/local/bin/dgoss
       - run:
           name: Test docker image
-          command: dgoss run petrpliska/kiwi-entrytask:latest sleep 100
+          command: dgoss run petrpliska/kiwi-entrytask:latest
           environment:
             GOSS_FILES_STRATEGY: cp
 
