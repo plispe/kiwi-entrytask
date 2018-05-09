@@ -3,6 +3,10 @@ port:
     listening: true
     ip:
     - 0.0.0.0
+  tcp:443:
+    listening: true
+    ip:
+    - 0.0.0.0
 user:
   nginx:
     exists: true
