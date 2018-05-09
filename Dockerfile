@@ -19,7 +19,7 @@ FROM nginx:1.13.12-alpine
 
 RUN mkdir -p /etc/nginx/ssl
 
-COPY --from=cert-generator --chown=nginx:nginx /certs/localhost.key /etc/nginx/ssl
-COPY --from=cert-generator --chown=nginx:nginx /certs/localhost.crt /etc/nginx/ssl
-COPY --chown=nginx:nginx default.conf /etc/nginx/conf.d
-COPY --chown=nginx:nginx html /usr/share/nginx/html
+COPY --from=cert-generator /certs/localhost.key /etc/nginx/ssl
+COPY --from=cert-generator /certs/localhost.crt /etc/nginx/ssl
+COPY default.conf /etc/nginx/conf.d
+COPY html /usr/share/nginx/html
