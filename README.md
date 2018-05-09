@@ -1,0 +1,3 @@
+# Entry task for the Kiwi.com Weekend in the Cloud
+[![CircleCI](https://circleci.com/gh/plispe/kiwi-entrytask/tree/master.svg?style=svg&circle-token=0b4f358e9943f9468787e87bbcbd5f32f27438b5)](https://circleci.com/gh/plispe/kiwi-entrytask/tree/master)
+[![](https://dockerbuildbadges.quelltext.eu/status.svg?organization=petrpliska&repository=kiwi-entrytask)](https://hub.docker.com/r/petrpliska/kiwi-entrytask/builds/)
