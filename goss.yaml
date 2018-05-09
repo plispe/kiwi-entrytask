@@ -14,9 +14,13 @@ user:
     shell: /sbin/nologin
 http:
   http://localhost:
-    status: 200
-    allow-insecure: false
-    no-follow-redirects: false
+    status: 301
+    no-follow-redirects: true
     timeout: 5000
-    body: 
+  https://localhost:
+    status: 200
+    allow-insecure: true
+    no-follow-redirects: true
+    timeout: 5000
+    body:
     - I want to attend the Kiwi.com Weekend in the Cloud
